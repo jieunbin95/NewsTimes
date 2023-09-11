@@ -1,0 +1,174 @@
+/* 상단메뉴바 */
+.sub-menu {
+  display:flex;
+}
+
+.sub-menu .material-symbols-outlined{
+  cursor: pointer;
+  width: 30px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.sub-menu .search-item {
+  margin-right: 5px;
+}
+
+.sub-menu .menu-item {
+  display: none;
+}
+
+.sub-menu .menu-item:hover,
+.sub-menu .search-item:hover{
+ background-color: beige;
+}
+
+.sub-menu .input-bar{
+  display: none;
+  height: 30px;
+}
+
+.sub-menu .input-bar.show{
+  display: block;
+}
+
+.sub-menu input{
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.sub-menu button{
+  margin-top: 5px;
+  background-color: transparent;
+  border: none;
+  transition: .5s;
+}
+
+.sub-menu button:hover{
+  background-color: gray;
+  color: white;
+}
+
+
+.sub-bar {
+  background-color: burlywood;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sub-bar.show {
+  display: block;
+}
+
+.sub-bar .close-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.sub-bar .close-bar .material-symbols-outlined {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.sub-bar .button-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.sub-bar button {
+  border: none;
+  background-color: transparent;
+  width: 120px;
+  margin: 5px;
+}
+
+.sub-bar button:hover {
+  background-color: beige;
+}
+
+/* 타이틀 */
+.head-line {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.head-line svg {
+  width: 430px;
+}
+
+/* 메뉴 */
+.menus {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 4px double #000;
+}
+
+.menus button {
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.menus button:hover {
+  background-color: beige;
+}
+
+/* 뉴스보여지는 부분 */
+.news{
+ margin-top: 10px;
+ border-bottom: 2px solid #ebebeb;
+}
+
+
+.news-img-size {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+
+@media (max-width: 63rem) {
+  .sub-menu .menu-item{
+    display: block;
+  }
+
+  .menus{
+    display: none;
+  }
+
+  .search-item{
+    display: flex;
+  }
+}
+
+/* 페이지네이션 */
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.page-link{
+  color:gray;
+}
+
+
